@@ -5,6 +5,10 @@ import { Glass } from "./Glass";
 import { ProjectSlider } from "./ProjectSlider";
 
 export const ProjectCard = ({ project }) => (
+    <button
+        onClick={() => onOpen(project)} // This line makes it clickable!
+        className="text-left w-full active:scale-[0.98] transition-transform group"
+    >
     <Glass className="rounded-3xl overflow-hidden hover:border-blue-500/40 transition flex flex-col group">
         <div className="relative w-full aspect-[16/10] border-b border-zinc-800">
             <ProjectSlider project={project} showControls={false} />
@@ -22,4 +26,5 @@ export const ProjectCard = ({ project }) => (
             </div>
         </div>
     </Glass>
+    </button>
 );
