@@ -27,7 +27,12 @@ export default function Projects({ onBack }) {
 
             <div className="grid gap-8 md:grid-cols-2">
                 {PROJECTS.map((project, idx) => (
-                    <ProjectCard key={idx} project={project} />
+                    <ProjectCard
+  key={idx}
+  project={project}
+  onOpen={() => {}}
+/>
+
                 ))}
             </div>
         </motion.section>
