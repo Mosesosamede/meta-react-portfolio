@@ -103,7 +103,7 @@ export default function Projects({ onBack }) {
                   </div>
 
                   <div className="mt-12 pt-12 border-t border-zinc-800 flex flex-wrap gap-4">
-                    {activeProject.links.map((link, i) => (
+                    {activeProject.links?.map((link, i) => (
                       <a 
                         key={i} 
                         href={link.href}
