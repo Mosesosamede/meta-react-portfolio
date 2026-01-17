@@ -4,7 +4,7 @@ import { ArrowRight, RefreshCcw } from "lucide-react";
 import { Glass } from "./Glass";
 import { ProjectSlider } from "./ProjectSlider";
 
-export const ProjectCard = ({ project }) => (
+export const ProjectCard = ({ project, onOpen }) => (
     <button
         onClick={() => onOpen(project)} // This line makes it clickable!
         className="text-left w-full active:scale-[0.98] transition-transform group"
@@ -28,3 +28,4 @@ export const ProjectCard = ({ project }) => (
     </Glass>
     </button>
 );
+
