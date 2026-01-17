@@ -1,4 +1,3 @@
-import React from "react";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, X, ExternalLink, CheckCircle2 } from "lucide-react";
