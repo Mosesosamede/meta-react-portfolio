@@ -6,6 +6,8 @@ import ErrorBoundary from "./components/ErrorBoundary";
 export default function App() {
   const [path, setPath] = useState("home"); // ✅ HOME FIRST
 
+console.log("APP STARTED ON:", path);
+
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-50">
       <ErrorBoundary>
