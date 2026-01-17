@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function useTypewriter(items) {
+export function useTypewriter(items = []) {
     const [index, setIndex] = useState(0);
     const [displayText, setDisplayText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
@@ -8,6 +8,7 @@ export function useTypewriter(items) {
 
     useEffect(() => {
         const handleType = () => {
+            if (!items.length) return;
             const current = items[index % items.length];
             if (isDeleting) {
                 setDisplayText(current.substring(0, displayText.length - 1));
